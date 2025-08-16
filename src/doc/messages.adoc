@@ -16,7 +16,7 @@ As a result, the message list in a conversation often contains many more message
 [NOTE]
 ====
 For the most accurate and up-to-date information on the calculations,
-please refer to the https://github.com/yaozhiwang/chatjourney/blob/master/src/content-script/chatgpt-journey/data.ts[source code].
+please refer to the https://github.com/yaozhiwang/chatjourney/blob/master/src/content-script/chatgpt/data.ts[source code].
 ====
 
 == Total Messages

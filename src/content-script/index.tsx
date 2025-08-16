@@ -1,4 +1,4 @@
-import { renderJourney } from "./chatgpt-journey/welcome"
+import { renderJourney } from "./chatgpt/welcome"
 
 if (location.pathname === "/") {
   renderJourney()

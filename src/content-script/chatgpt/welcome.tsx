@@ -6,13 +6,8 @@ import "@/index.css"
 import Journey from "./journey"
 
 export function renderJourney() {
-  const welcomePanel = document.querySelector(
-    'main div[role="presentation"] > .flex-1.overflow-hidden .relative.h-full'
-  )
-  welcomePanel?.classList.remove("relative")
-
-  const welcome = welcomePanel?.querySelector(
-    ".flex.h-full.flex-col.items-center.justify-center"
+  const welcome = document.querySelector(
+    'main div[role="presentation"] > .basis-auto.shrink'
   )
   if (welcome) {
     render(welcome)
