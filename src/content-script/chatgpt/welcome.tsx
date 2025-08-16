@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import ReactDOM from "react-dom/client"
 
-import "@/index.css"
-
 import Journey from "./journey"
 
 export function renderJourney() {
