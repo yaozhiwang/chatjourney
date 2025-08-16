@@ -4,9 +4,9 @@ import packageJson from "./package.json"
 
 const { version } = packageJson
 
-const name = "ChatGPT Sugar: Make Your ChatGPT Sweeter"
+const name = "ChatJourney: Visualize Your AI Chats"
 const description =
-  "A collection of subtle and delightful tools, seamlessly integrated into your ChatGPT experience."
+  "Transforms your entire AI chat history into a clear and interactive visual timeline."
 
 export default defineManifest(async (env) => {
   return {
@@ -34,7 +34,7 @@ export default defineManifest(async (env) => {
     ...(process.env.BROWSER === "firefox" && {
       browser_specific_settings: {
         gecko: {
-          id: "firefox@chatgptsugar.xyz",
+          id: "firefox@getchatjourney.com",
           strict_min_version: "58.0"
         }
       }

@@ -21,7 +21,7 @@ export function renderJourney() {
 
 function render(parent: Node) {
   const root = document.createElement("div")
-  root.id = "sugar-journey-welcome-root"
+  root.id = "chatjourney-welcome-root"
   parent.appendChild(root)
 
   ReactDOM.createRoot(root).render(

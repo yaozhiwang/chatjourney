@@ -101,12 +101,12 @@ export default function Journey() {
                       month: "long",
                       day: "numeric"
                     })}{" "}
-                    by https://chatgptsugar.xyz
+                    by https://getchatjourney.com
                   </p>
                 )}
               </div>
               <a
-                href="https://github.com/yaozhiwang/chatgpt-sugar/blob/master/src/doc/messages.adoc"
+                href="https://github.com/yaozhiwang/chatjourney/blob/master/src/doc/messages.adoc"
                 className="my-4 flex items-center justify-end gap-2 text-gray-500 hover:text-gray-600 dark:hover:text-gray-400"
                 target="_blank"
                 rel="noreferrer">

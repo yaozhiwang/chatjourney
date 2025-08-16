@@ -42,7 +42,7 @@ export default function Waiting({
           <li>
             The code is{" "}
             <a
-              href="https://github.com/yaozhiwang/chatgpt-sugar/"
+              href="https://github.com/yaozhiwang/chatjourney/"
               target="_blank">
               open source
             </a>
