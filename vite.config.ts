@@ -1,3 +1,5 @@
+import fs from "fs"
+import { resolve } from "path"
 import { defineConfig } from "vite"
 import tsconfigPaths from "vite-tsconfig-paths"
 

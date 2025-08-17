@@ -22,14 +22,30 @@ export default defineManifest(async (env) => {
         "128": "src/assets/logo.png"
       },
       action: {},
-      host_permissions: ["https://chatgpt.com/"],
+      host_permissions: [
+        ...["https://chatgpt.com/"],
+        ...(env.mode !== "production" ? ["http://localhost:5173/"] : [])
+      ],
       permissions: [],
       content_scripts: [
         {
           matches: ["https://chatgpt.com/*"],
-          js: ["src/content-script/index.tsx"]
+          js: [
+            ...["src/content-scripts/index.tsx"],
+            ...(env.mode !== "production"
+              ? ["dev-tools/src/content-scripts/class-validator.ts"]
+              : [])
+          ]
         }
-      ]
+      ],
+      background: {
+        ...(env.mode !== "production"
+          ? {
+              service_worker: "dev-tools/src/background/index.ts",
+              type: "module"
+            }
+          : {})
+      }
     },
     ...(process.env.BROWSER === "firefox" && {
       browser_specific_settings: {

@@ -1,6 +1,6 @@
 import { renderJourney } from "./chatgpt/welcome"
 
-if (location.pathname === "/") {
+if(location.pathname === "/") {
   renderJourney()
 }
 let prevPathname = location.pathname

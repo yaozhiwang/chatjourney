@@ -28,9 +28,9 @@ function Welcome({}) {
   const [showModal, setShowModal] = useState(false)
 
   return (
-    <div>
+    <div className="@lg/thread:items-end mb-7 flex items-center justify-center">
       <button
-        className="btn btn-neutral group relative w-full whitespace-nowrap rounded-xl px-4 py-3 text-left text-gray-700 md:whitespace-normal dark:text-gray-300"
+        className="btn btn-ghost text-token-text-primary relative"
         onClick={() => {
           setShowModal(true)
         }}>

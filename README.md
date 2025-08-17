@@ -36,7 +36,9 @@ Visualize Your AI Chats
 
 </div>
 
-ChatJourney is a browser extension that automatically transforms your entire AI chat history into a clear and interactive visual timeline. All data are processed locally and privately.
+ChatJourney is a browser extension that automatically transforms your entire AI
+chat history into a clear and interactive visual timeline. All data are
+processed locally and privately.
 
 ## Features
 
@@ -71,3 +73,14 @@ ChatJourney is a browser extension that automatically transforms your entire AI 
 2. Install dependencies with `bun install`
 3. `bun run build` or `bun run build-firefox`
 4. Load `dist/chrome` or `dist/firefox` directory to your browser
+
+## Development
+
+### classNames
+
+To avoid mess up css with host pages, we try to use classNames available on host
+pages. We build dev tool to check all the classNames in our source code. Check
+[dev-tools](https://github.com/yaozhiwang/chatjourney/dev-tools) for details.
+
+For the same reason, We don't use tailwindcss, the dependency of
+`tailwindcss: "3"` is only to make `prettier-plugin-tailwindcss` working.
